@@ -11,6 +11,7 @@ def sentiment_analyzer_scores(sentence):
     return score
 
 # This is calling on this lyricsgenius module to get the artist, title, lyrics, etc.
+# You will need to replace "my_client_access_token_here" with your unqiue access token
 genius = lyricsgenius.Genius("my_client_access_token_here")
 # this removies all headers (E.g. [Chorus])
 genius.remove_section_headers = True
